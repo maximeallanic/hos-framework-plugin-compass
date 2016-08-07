@@ -19,7 +19,7 @@
     },
     "require": {
          "leafo/scssphp": "v0.6.5",
-				 "leafo/scssphp-compass": "0.0.1"
+				 "leafo/scssphp-compass": "dev-master"
     },
 		"config": {
 			"global": []
