@@ -12,6 +12,12 @@
             "email": "maxime@allanic.me"
         }
     ],
+     "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/maximeallanic/hos-framework-plugin-compass"
+      }
+    ],
     "autoload": {
         "psr-4":{
             "Hos\\Plugin\\Compass\\": "src/"
