@@ -1,7 +1,7 @@
 {
-    "name": "hos/plugin-twig-framework",
+    "name": "hos/plugin-compass",
     "description": "Twig Plugin Framework for Fast Developpement for PHP",
-    "keywords": [ "daehl", "hos", "framework", "twig" ],
+    "keywords": [ "hos", "framework", "compass" ],
     "homepage": "https://github.com/daehl/hos-framework",
     "type": "library",
     "license": "CC0 1.0",
@@ -9,19 +9,25 @@
     "authors": [
         {
             "name": "Maxime Allanic",
-            "email": "maxime.allanic@daehl.com"
+            "email": "maxime@allanic.me"
         }
     ],
     "autoload": {
         "psr-4":{
-            "Hos\\": "src/"
+            "Hos\\Plugin\\Compass\\": "src/"
         }
     },
     "require": {
-         "twig/twig": "v1.13.0"
+         "leafo/scssphp": "0.6.5",
+				 "leafo/scssphp-compass": "dev-master"
     },
-    "config": {
-        "global": {}
-    }
+		"config": {
+			"global": []
+		},
+		"events": {
+			"generate": {
+					"scss": ["Hos\\Plugin\\Compass\\Events::generate"]
+			}
+		}
 
 }
